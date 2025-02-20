@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Projet</title>
+    <link rel="stylesheet" href="main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        :root {
+        --main-color: hsl(0, 100%, 65%);
+        }
+        .scroll-arrow {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            position: absolute;
+            bottom: 25%;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: transform 0.3s ease;
+            z-index: 100;
+        }
+
+        .scroll-arrow:hover {
+            transform: translate(-50%, 8px);
+        }
+
+        .arrow {
+            width: 30px;
+            height: 30px;
+            border: solid var(--main-color);
+            border-width: 0 8px 8px 0;  
+            transform: rotate(45deg);
+            animation: bounce 3s ease-in-out infinite;
+            filter: drop-shadow(var(--main-color));
+        }
+
+        .scroll-text {
+            color: var(--main-color);
+            margin-top: 30px;  
+            font-size: 15px;  
+            font-weight: 500;
+            opacity: 0.9;
+            filter: drop-shadow(var(--main-color));
+            letter-spacing: 2px;     
+        }
+        
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: rotate(10deg) translateY(0);
+                filter: drop-shadow(var(--main-color));
+            }
+            50% {
+                transform: rotate(80deg) translateY(0px); 
+                filter: drop-shadow(var(--main-color));
+            }
+        }
+        .scrolls-arrow {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            position: absolute;
+            bottom: -370%;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: transform 0.3s ease;
+            z-index: 100;
+        }
+
+        .scrolls-arrow:hover {
+            transform: translate(-50%, 8px);
+        }
+
+        .arrows {
+            width: 30px;
+            height: 30px;
+            border: solid var(--main-color);
+            border-width: 0 8px 8px 0;  
+            transform: rotate(45deg);
+            animation: bounce 3s ease-in-out infinite;
+            filter: drop-shadow(var(--main-color));
+        }
+
+        .scrolls-text {
+            color: var(--main-color);
+            margin-top: 30px;  
+            font-size: 15px;  
+            font-weight: 500;
+            opacity: 0.9;
+            filter: drop-shadow(var(--main-color));
+            letter-spacing: 2px;     
+        }
+        
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: rotate(10deg) translateY(0);
+                filter: drop-shadow(var(--main-color));
+            }
+            50% {
+                transform: rotate(80deg) translateY(0px); 
+                filter: drop-shadow(var(--main-color));
+            }
+        }
+
+        .history {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .history-container {
+            margin-bottom: 250px; 
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Sa<span>shenka</span> Os<span>aze</span></a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="sumber.html">Education</a>
+            <a href="article.html">Article</a>
+            <a href="sunda.html">Sundanese</a>
+            <a href="hist.html" class="active">History</a>
+            <a href="port.html">Portfolio</a>
+            <a href="cont.html">Contact</a>
+        </nav>
+    </header>
+    
+    <section class="history" id="history">
+        <h1 class="heading">Projek <span>Sejarah</span></h1>
+
+        <div class="history-container">
+            <div class="history-box">
+                <div class="history-info">
+                    <h4>Sejarah Singkat</h4><br><br><br>
+                    <p>Revolusi Industri terjadi pada periode antara tahun 1760-1850 di mana terjadinya perubahan secara besar-besaran di bidang pertanian, manufaktur, pertambangan, transportasi, dan teknologi serta memiliki dampak yang mendalam terhadap kondisi sosial, ekonomi, dan budaya di dunia.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-arrow" onclick="smoothScroll()">
+            <div class="arrow"></div>
+            <div class="scroll-text">Scroll Down</div>
+        </div>
+    </section>
+
+    <section class="learning" id="learning">
+        <h2 class="heading">Revolusi <span>Industri</span></h2>
+
+        <div class="learning-items">
+            <div class="learning-item">
+                <div class="learning-dot"></div>
+                    <div class="learning-name">Revolusi Industri 1.0</div>
+                    <div class="learning-content">
+                        <h3>Dimulai pada <span>abad ke-18</span> melalui penggunaan tenaga <span>uap</span> dan <span>mekanisasi</span> produksi.</h3>
+                        <p>Sebelum memproduksi benang pada roda pemintal sederhana, versi mekanis mencapai delapan kali volume dalam waktu yang sama. <br><br>Tenaga uap sudah dikenal. Penggunaannya untuk tujuan industri merupakan terobosan terbesar untuk meningkatkan produktivitas manusia. <br><br>Alih-alih menenun memakai alat tenun yang ditenagai oleh otot, mesin uap dapat digunakan untuk menghasilkan tenaga. <br><br>Perkembangan seperti kapal uap atau lokomotif bertenaga uap, membawa perubahan besar lebih lanjut. Manusia dan barang dapat berpindah jarak yang jauh dalam beberapa jam.</p>
+                    </div>
+            </div>
+
+            <div class="learning-item">
+                <div class="learning-dot"></div>
+                    <div class="learning-name">Revolusi Industri 2.0</div>
+                    <div class="learning-content">
+                         <h3>Dimulai pada <span>abad ke-19</span> melalui penemuan <span>listrik</span> dan <span>jalur produksi</span> perakitan.</h3>
+                        <p>Henry Ford (1863-1947) mengambil ide produksi massal dari sebuah rumah jagal di Chicago, saat melihat babi-babi digantung di ban berjalan dan setiap tukang daging hanya melakukan sebagian tugas menyembelih hewan. <br><br>Henry Ford menerapkan prinsip-prinsip ini ke dalam produksi mobil dan secara drastis mengubahnya dalam prosesnya. <br><br>Sebelum satu stasiun merakit seluruh mobil, sekarang kendaraan diproduksi secara parsial di ban berjalan. Hal ini jauh lebih cepat dan memakan biaya lebih rendah.</p>
+                    </div>
+            </div>
+            
+            <div class="learning-item">
+                <div class="learning-dot"></div>
+                    <div class="learning-name">Revolusi Industri 3.0</div>
+                    <div class="learning-content">
+                         <h3>Dimulai pada <span>tahun 70-an</span>, melalui <span>otomatisasi parsial</span> menggunakan kontrol dan <span>komputer</span> yang dapat <span>diprogram memori.</span></h3>
+                        <p>Sejak diperkenalkannya teknologi ini, perusahaan dapat mengotomatiskan seluruh proses produksi tanpa bantuan manusia. <br><br>Contoh yang diketahui dari hal ini adalah robot, yang melakukan urutan terprogram tanpa campur tangan manusia.</p>
+                    </div>
+            </div>
+            
+            <div class="learning-item">
+                <div class="learning-dot"></div>
+                    <div class="learning-name">Revolusi Industri 4.0</div>
+                    <div class="learning-content">
+                         <h3>Ditandai dengan penerapan <span>teknologi informasi</span> dan <span>komunikasi</span> pada industri.</h3>
+                        <p>Sistem produksi yang sudah memiliki teknologi komputer, yang diperluas dengan koneksi jaringan dan memiliki kembaran digital di Internet. <br><br>Ini memungkinkan komunikasi dengan fasilitas lain dan jaringan semua sistem mengarah ke "sistem produksi fisik-cyber". Karena itu, muncul istilah "pabrik pintar", di mana sistem produksi, komponen, dan orang, berkomunikasi melalui jaringan dan produksi hampir otonom. <br><br>Industri 4.0 dapat menarik individu ke dalam jaringan yang lebih cerdas, dengan potensi kerja yang lebih efisien. Digitalisasi lingkungan manufaktur juga memungkinkan metode yang lebih fleksibel.</p>
+                    </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <div class="scrolls-arrow" onclick="smothScroll()">
+        <div class="arrows"></div>
+        <div class="scrolls-text">Scroll Down</div> 
+    </div>
+
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio-box">
+            <h2 class="heading">Gambar</h2>
+
+            <div class="wrapper">
+                <div class="portfolio-item">
+                    <img src="revolusi-industri-1.0.jpg" alt="">
+                    <h2>Revolusi Industri 1.0</h2>
+                    <div class="ket">
+
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed corrupti recusandae veritatis necessitatibus, natus sit magni alias ipsam, voluptates, culpa ipsa rerum vel maxime tenetur blanditiis dolore veniam neque laboriosam.</p>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="refolusi industri-2.0.jpg" alt="">
+                    <h2>Revolusi Industri 2.0</h2>
+                    <div class="ket">
+
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed corrupti recusandae veritatis necessitatibus, natus sit magni alias ipsam, voluptates, culpa ipsa rerum vel maxime tenetur blanditiis dolore veniam neque laboriosam.</p>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="revolusi-industri-3.0.png" alt="">
+                    <h2>Revolusi Industri 3.0</h2>
+                    <div class="ket">
+
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed corrupti recusandae veritatis necessitatibus, natus sit magni alias ipsam, voluptates, culpa ipsa rerum vel maxime tenetur blanditiis dolore veniam neque laboriosam.</p>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="revolusiindustri4.0.jpg" alt="">
+                    <h2>Revolusi Industri 4.0</h2>
+                    <div class="ket">
+
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed corrupti recusandae veritatis necessitatibus, natus sit magni alias ipsam, voluptates, culpa ipsa rerum vel maxime tenetur blanditiis dolore veniam neque laboriosam.</p>
+                </div>
+            </div>
+        </div>
+        <h1 class="heading"><span>Sumber</span> Informasi</h1>
+        
+        <div class="logos">
+            <div class="logos-content">
+                 <div class="sumberinf">
+                   <a href="https://id.wikipedia.org/wiki/Revolusi_Industri" target="_blank"><i class='bx bxl-wikipedia'></i></a>
+                   <a href="https://internasional.kompas.com/read/2021/10/08/170652070/tahapan-revolusi-industri-dari-10-sampai-40" target="_blank">🧭</a>
+                   <a href="https://rimbakita.com/revolusi-industri/" target="_blank">🍃</a>
+                   <a href="https://saraeryna88.blogspot.com/2023/04/cabaran-revolusi-industri-40-yang.html" target="_blank"><i class='bx bxl-blogger'></i></a>
+                 </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/sashenka-osaze-07b552322/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/sashenkaze" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://www.instagram.com/shenka_aze/?next=%2F" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="https://x.com/Shenka_4z3" target="_blank"><i class='bx bxl-twitter'></i></a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="cont.html">FAQ</a>
+            </li>
+
+            <li>
+                <a href="port.html">Portfolio</a>
+            </li>
+
+            <li>
+                <a href="index.html">About Me</a>
+            </li>
+
+            <li>
+                <a href="cont.html">Contact</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            © 2025 Sashenka Osaze | All Rights Reserved
+        </p>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        function smoothScroll() {
+            const learningSection = document.querySelector('.learning');
+            learningSection.scrollIntoView({ behavior: 'smooth' });
+        }
+        function smothScroll() {
+            const portfolioSection = document.querySelector('.portfolio');
+            portfolioSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
