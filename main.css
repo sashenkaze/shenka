@@ -250,6 +250,11 @@ span {
     text-align: center;
     margin: 10rem 0;
 }
+.headings {
+    font-size: 4rem;
+    text-align: center;
+    margin:4rem 0;
+}
 .learning {
     padding: 100px 15px;
     background: var(--bg-color);
@@ -619,109 +624,7 @@ span {
 
 /* sunda */
 
-.sunda {
-    background: var(--bg-color);
-    color: var(--text-color);
-}
-.sunda h1 {
-    margin-bottom: 5rem;
-    color: white;
-}
-.sunda-container {
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    align-items: center;
-    gap: 2.5rem;
-}
-.sunda-box {
-    background-color: var(--bg-color);
-    height: 300px;
-    border-radius: 3rem;
-    border: 5px solid var(--main-color);
-    cursor: pointer;
-    transition: 0.4s ease-in-out;
-    box-shadow: 0 0 10px var(--main-color);
-}
-.sunda-box:hover {
-    background: var(--bg-color);
-    color: var(--text-color);
-    border: 5px solid var(--main-color);
-    transform: scale(1.03);
-    box-shadow: 0 0 50px var(--main-color);
-}
-.sunda-box .sunda-info {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    max-height: 200px;
-    justify-content: left;
-    align-items: baseline;
-    padding: 5rem 5rem;
-}
-.sunda-info h4 {
-    font-size: 3.4rem;
-    font-weight: 800;
-    line-height: 1.4;
-}
-.sunda-info p {
-    font-size: 2rem;
-    font-weight: 600;
-    max-height: 100px;
-    line-height: 1.7;
-    margin: auto;
-}
 
-.articles {
-    background: var(--bg-color);
-    color: var(--text-color);
-}
-.articles h2 {
-    margin-bottom: 5rem;
-    color: white;
-}
-.articles-container {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    align-items: center;
-    gap: 2.5rem;
-}
-.articles-box {
-    background-color: var(--bg-color);
-    height: 300px;
-    border-radius: 3rem;
-    border: 5px solid var(--main-color);
-    cursor: pointer;
-    transition: 0.4s ease-in-out;
-    box-shadow: 0 0 10px var(--main-color);
-}
-.articles-box:hover {
-    background: var(--bg-color);
-    color: var(--text-color);
-    border: 5px solid var(--main-color);
-    transform: scale(1.03);
-    box-shadow: 0 0 50px var(--main-color);
-}
-.articles-box .articles-info {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    max-height: 200px;
-    justify-content: left;
-    align-items: baseline;
-    padding: 5rem 5rem;
-}
-.articles-info h4 {
-    font-size: 3rem;
-    font-weight: 800;
-    line-height: 1.4;
-}
-.articles-info p {
-    font-size: 1.4rem;
-    font-weight: 600;
-    max-height: 100px;
-    line-height: 1.7;
-    margin: auto;
-}
 
 /* sunda */
 
